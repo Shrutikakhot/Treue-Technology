@@ -1,4 +1,6 @@
+//Program for the Voting System
 import java.util.Scanner;
+//create class as Voting_System
 class Voting_System
 {
     public static void main(final String[] args) 
@@ -19,11 +21,13 @@ class Voting_System
 
         System.out.println("\nName is:" +name);
         System.out.println("Age is:" +age);
-
+        //if age is less than 18
         if(age<18){
             System.out.println("Not are Not Eligible to vote!!");
             System.out.print("Thank You!!");
-        }else{
+        }
+        //else this will print
+        else{
             System.out.println("\nEnter the candidate name to vote for:");
             System.out.println("============================");
             System.out.println("1.candidate 1");
@@ -43,6 +47,7 @@ class Voting_System
                 System.out.print("Invalid Candidate Selection.");
             }
 
+            //prints the vote counts
             System.out.println("\n\nThe vote count for candidate 1 is:" +candidate1vote);
             System.out.println("The vote count for candidate 2 is:" +candidate2vote);
         }  
